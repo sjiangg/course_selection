@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html>
+   <head>
+		<title>Search Results</title>
+		<style type = "text/css">
+		body  { font-family: arial, sans-serif;
+				 background-color: #F0E68C } 
+		table { background-color: #ADD8E6 }
+		td    { padding-top: 2px;
+				padding-bottom: 2px;
+				padding-left: 4px;
+				 padding-right: 4px;
+				 border-width: 1px;
+				 border-style: inset }
+		</style>
+	</head>
+	<body>
+
+		<form method = "post" action = "display_courses.php">
+			<div>
+				<p>Click to check all courses</p>
+				<input type="submit" name="display_courses"
+                	class="button" value="Display Courses" />
+			</div>
+			<br/>
+		</form>
+
+		<form method = "post" action = "student_add.php">
+			<div>
+				<p>Enter Student ID and Course Code to select a course</p>
+				<input type = "number" name = "stu_id" id = "stu_id" /> 
+				<input type = "number" name = "course_id" id = "course_id" /><br/>
+				<p>Enter desired date for testing purpose</p>
+				<input type = "date" name = "date_input" id = "date_input" /> 
+				
+				<input type = "submit" value = "Send Query" />
+			</div>
+			<br/>
+		</form>
+
+		<form method = "post" action = "student_add_display.php">
+			<div>
+				<p>Click to check your current courses</p>
+				<input type="submit" name="display_courses"
+                	class="button" value="Display Courses" />
+			</div>
+			<br/>
+		</form>
+
+		<form method = "post" action = "student_drop.php">
+			<div>
+				<p>Enter Student ID and Course Code to drop a course</p>
+				<input type = "number" name = "stu_id_drop" id = "stu_id_drop" /> 
+				<input type = "number" name = "course_id_drop" id = "course_id_drop" />                      
+				<input type = "submit" value = "Send Query" />
+			</div>
+			<br/>
+		</form>
+		
+	</body>
+</html>
+
